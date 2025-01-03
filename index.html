@@ -3,45 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Garrido Moreno</title>
+  <title>David Garrido Moreno - Página Personal</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: "Courier New", Courier, monospace;
-      text-align: center;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #000; /* Fondo negro */
-      color: #fff; /* Texto blanco */
+      background: #f4f4f4;
+      color: #333;
     }
     header {
       padding: 20px;
-      background: #111; /* Fondo ligeramente más claro que el cuerpo */
-      color: #fff;
+      background: #333;
+      color: white;
+      text-align: center;
     }
     h1 {
       margin: 0;
     }
-    p {
-      font-size: 1.2em;
+    .button-container {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
     .button {
       display: inline-block;
       padding: 10px 20px;
       font-size: 1em;
-      color: #fff; /* Texto blanco */
-      background: linear-gradient(45deg, #6a0dad, #8a2be2); /* Degradado morado */
+      color: white;
+      background: linear-gradient(45deg, #6a0dad, #8a2be2);
       text-decoration: none;
       border-radius: 5px;
       transition: transform 0.2s, background 0.3s;
     }
     .button:hover {
-      background: linear-gradient(45deg, #8a2be2, #6a0dad); /* Invertir degradado */
-      transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+      background: linear-gradient(45deg, #8a2be2, #6a0dad);
+      transform: scale(1.1);
     }
-    .button-container {
-      margin: 20px;
+    .carousel-item {
+      text-align: center;
+      padding: 20px;
+    }
+    .post-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .post-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .post-content {
+      margin-top: 15px;
+    }
+    .post-text {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .post-hashtags {
+      margin-top: 10px;
+      color: #0073b1;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -51,70 +79,102 @@
     <p>Software Engineer</p>
   </header>
 
-  <div class="container">
-    <div class="row justify-content-center button-container">
-      <!-- Botón para LinkedIn -->
-      <div class="col-12 col-md-6 mb-3">
-        <a href="https://www.linkedin.com/in/dgarridomoreno" class="button d-block" target="_blank">LinkedIn</a>
-      </div>
-
-      <!-- Botón para agregar datos a Contactos -->
-      <div class="col-12 col-md-6 mb-3">
-        <a href="vcard.vcf" class="button d-block" download="DavidGarrido.vcf">Agregar a Contactos</a>
-      </div>
-    </div>
+  <!-- Botones -->
+  <div class="button-container">
+    <a href="https://www.linkedin.com/in/dgarridomoreno" class="button" target="_blank">LinkedIn</a>
+    <a href="vcard.vcf" class="button" download="DavidGarrido.vcf">Agregar a Contactos</a>
   </div>
 
-  <div id="linkedinCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-     
+      <!-- Primera diapositiva -->
       <div class="carousel-item active">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7256255184584986624" 
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
+        <div class="post-container">
+          <div class="post-image">
+            <img src="image1.png" alt="Post 1">
+          </div>
+          <div class="post-content">
+            <p class="post-text">
+              Managing teams as a middle manager is always a challenge but also an opportunity to grow and keep learning. 
+              You have to deal with the "sandwich syndrome," trying to meet objectives while addressing the team's needs, 
+              where in my opinion open communication and empathy are essential. But above all, belonging to the team is 
+              what matters most, no matter what role you occupy.
+            </p>
+            <p class="post-text">
+              As the Golden State Warriors say: "Strength in Numbers." It's all about the team.
+            </p>
+            <p class="post-hashtags">#Leadership #TeamManagement #Teamwork #PipDeck</p>
+          </div>
+        </div>
       </div>
-     
+      <!-- Segunda diapositiva -->
       <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7253672852036456448" 
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
+        <div class="post-container">
+          <div class="post-image">
+            <img src="image2.png" alt="Post 2">
+          </div>
+          <div class="post-content">
+            <p class="post-text">
+              ChatGPT + Google Colab + Hugging Face + 1 hour of work = Mini API for image descriptions! 🚀💻
+              <br>📗 100% free image descriptor!
+              <br>Knowledge + Experience + AI = I'm skyrocketing 🌌🚀
+              <br>#AI #ImageCaptioning #Python
+            </p>
+          </div>
+        </div>
       </div>
-      
+      <!-- Tercera diapositiva -->
       <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7251211436411019264" 
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
+        <div class="post-container">
+          <div class="post-image">
+            <img src="image3.png" alt="Post 3">
+          </div>
+          <div class="post-content">
+            <p class="post-text">
+              Despite my love for Artificial Intelligence, I always keep you in my thoughts, Miss O'Reilly. 📚
+              <br>Books that keep reinforcing knowledge and distracting the mind.
+              <br>#TechBooks #Microservices #APIDesign
+            </p>
+          </div>
+        </div>
       </div>
-
+      <!-- Cuarta diapositiva -->
       <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7246118166244839425"
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
+        <div class="post-container">
+          <div class="post-image">
+            <img src="image4.png" alt="Post 4">
+          </div>
+          <div class="post-content">
+            <p class="post-text">
+              Today, Artificial Intelligence is taking center stage in my work, but I will never forget the power and elegance of a good 'regex'. 🔍💡
+              <br>#Regex #AI #DataScience
+            </p>
+          </div>
+        </div>
       </div>
-
+      <!-- Quinta diapositiva -->
       <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7243671484420771841"
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
+        <div class="post-container">
+          <div class="post-image">
+            <img src="image5.png" alt="Post 5">
+          </div>
+          <div class="post-content">
+            <p class="post-text">
+              Around 1990, I tried to program one of the games from the Amstrad CPC 6128 manual using BASIC, but I couldn’t get past the dreaded "Syntax error in line…"
+              <br>That challenge was my first step toward becoming a Computer Engineer.
+              <br>#RetroComputing #Programming
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="carousel-item">
-        <iframe src=""
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7238461047060238336"
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <div class="carousel-item">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7236393705018929154"
-          height="400" width="100%" frameborder="0" allowfullscreen></iframe>
-      </div>
-     
     </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#linkedinCarousel" data-bs-slide="prev">
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Prev</span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#linkedinCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
