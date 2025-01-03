@@ -1,10 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
 FN:David Garrido Moreno
-ORG:Tu Empresa o Título Profesional
-TITLE:Desarrollador y Hacker
-TEL;TYPE=WORK,VOICE:+34 600 000 000
-EMAIL:david@dgarridomoreno.info
+ORG: Future id Now - Blockchain IA VR
+TITLE:Software Engineer
+EMAIL:dgarridomoreno@gmail.com
 URL:https://dgarridomoreno.info
-ADR;TYPE=WORK:;;Ciudad;Provincia;;España
+ADR;TYPE=WORK:;;Madrid;;;España
 END:VCARD
