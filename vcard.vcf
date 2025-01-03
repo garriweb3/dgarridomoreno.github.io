@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:David Garrido Moreno
+ORG:Tu Empresa o Título Profesional
+TITLE:Desarrollador y Hacker
+TEL;TYPE=WORK,VOICE:+34 600 000 000
+EMAIL:david@dgarridomoreno.info
+URL:https://dgarridomoreno.info
+ADR;TYPE=WORK:;;Ciudad;Provincia;;España
+END:VCARD
